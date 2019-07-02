@@ -14,19 +14,9 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Alpine
-      versions:
-        - all
     - name: Archlinux
       versions:
         - all
-    - name: Debian
-      versions:
-        - jessie
-        - stretch
   galaxy_tags:
     - development
 
