@@ -9,6 +9,7 @@ dist: xenial
 env:
 - OS=archlinux_latest
 - OS=centos_7
+- OS=centos_8
 - OS=fedora_25
 - OS=fedora_26
 - OS=fedora_27
