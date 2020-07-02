@@ -12,8 +12,6 @@
 - name: install buildah
   become: yes
   become_user: root
-  with_items:
-    - buildah
   package:
-    name: '{{ item }}'
+    name: '{{ buildah_os_pkgs | default("buildah") }}'
     state: present
