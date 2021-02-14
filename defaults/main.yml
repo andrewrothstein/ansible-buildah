@@ -1,2 +1,3 @@
 ---
 # defaults file for buildah
+buildah_installer: pkg

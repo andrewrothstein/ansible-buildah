@@ -11,6 +11,10 @@ galaxy_info:
     - name: Archlinux
       versions:
         - all
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
     - name: EL
       versions:
         - 7
@@ -19,10 +23,13 @@ galaxy_info:
       versions:
         - 31
         - 32
-    - name: Gentoo
+    - name: Ubuntu
       versions:
-        - all
+        - focal
+        - bionic
   galaxy_tags:
     - development
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.gpg
+    version: v1.0.7

@@ -1,0 +1,6 @@
+---
+buildah_pkg_mgr: apt
+buildah_apt_name: devel:kubic:libcontainers:stable
+buildah_apt_mirror: download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/x{{ ansible_distribution }}_{{ ansible_distribution_version }}
+buildah_apt_url: deb http://{{ buildah_apt_mirror }}/ /
+buildah_apt_key_url: https://{{ buildah_apt_mirror }}/Release.key

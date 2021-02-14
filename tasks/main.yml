@@ -9,9 +9,4 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: install buildah
-  become: yes
-  become_user: root
-  package:
-    name: '{{ buildah_os_pkgs | default("buildah") }}'
-    state: present
+- include_tasks: '{{ buildah_installer | default("pkg") }}.yml'

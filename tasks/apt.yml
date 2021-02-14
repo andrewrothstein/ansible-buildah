@@ -1,0 +1,14 @@
+---
+- name: add apt key
+  become: yes
+  become_user: root
+  apt_key:
+    url: '{{ buildah_apt_key_url }}'
+    state: present
+- name: add apt repository
+  become: yes
+  become_user: root
+  apt_repository:
+    repo: '{{ buildah_apt_url }}'
+    filename: '{{ buildah_apt_name }}'
+    state: present

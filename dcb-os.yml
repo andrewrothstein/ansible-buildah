@@ -1,6 +1,9 @@
 - archlinux_latest
 - centos_7
 - centos_8
+- debian_bullseye
+- debian_buster
 - fedora_31
 - fedora_32
-- gentoo_latest
+- ubuntu_focal
+- ubuntu_bionic
