@@ -14,7 +14,6 @@ galaxy_info:
     - name: Debian
       versions:
         - bullseye
-        - buster
     - name: EL
       versions:
         - 7
@@ -31,5 +30,5 @@ galaxy_info:
     - development
 
 dependencies:
-  - role: andrewrothstein.gpg
-    version: v1.0.7
+  - role: andrewrothstein.kubic
+    version: v0.0.1
