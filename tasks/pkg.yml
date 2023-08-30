@@ -2,7 +2,7 @@
 - when: buildah_pkg_mgr is defined
   include_tasks: '{{ buildah_pkg_mgr }}.yml'
 - name: install buildah
-  become: yes
+  become: true
   become_user: root
   package:
     name: '{{ buildah_os_pkgs | default("buildah") }}'
