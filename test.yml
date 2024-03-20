@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.buildah
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - shell: buildah --version
-    register: buildah_test_output
-  - name: buildah --version
-    debug:
-      msg: '{{ buildah_test_output.stdout }}'
+    - name: Executing 'buildah --version'
+      ansible.builtin.shell: buildah --version
+      changed_when: false
+      register: buildah_test_output
+    - name: Output of 'buildah --version'
+      ansible.builtin.debug:
+        msg: '{{ buildah_test_output.stdout }}'
